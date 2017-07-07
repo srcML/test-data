@@ -1,4 +1,4 @@
-srcml --text="" --hash -l C++ -o emptyunit.xml
+srcml --text="" --hash -l C++ --filename="empty.cpp" -o emptyunit.xml
 bzip2 -k emptyunit.xml
 gzip -k emptyunit.xml
 tar cf emptyunit.xml.tar emptyunit.xml
