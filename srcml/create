@@ -1,0 +1,17 @@
+srcml --text="" --hash -l C++ -o emptyunit.xml
+bzip2 -k emptyunit.xml
+gzip -k emptyunit.xml
+tar cf emptyunit.xml.tar emptyunit.xml
+zip emptyunit.xml.zip emptyunit.xml
+gzip -k --force emptyunit.xml.tar
+gzip -k --force emptyunit.xml.bz2
+bzip2 -k emptyunit.xml.zip
+gzip -k emptyunit.xml.zip
+ls emptyunit.xml | cpio -o > emptyunit.xml.cpio
+bzip2 -k emptyunit.xml.cpio
+gzip -k emptyunit.xml.cpio
+bzip2 -k emptyunit.xml.tar
+bzip2 -k emptyunit.xml.gz
+cp emptyunit.xml.tar.gz emptyunit.xml.tgz
+cp emptyunit.xml.tar.bz2 emptyunit.xml.tbz2
+
