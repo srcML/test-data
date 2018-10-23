@@ -15,3 +15,18 @@ bzip2 -k emptyunit.xml.gz
 cp emptyunit.xml.tar.gz emptyunit.xml.tgz
 cp emptyunit.xml.tar.bz2 emptyunit.xml.tbz2
 
+bzip2 -k unit.xml
+gzip -k unit.xml
+tar cf unit.xml.tar unit.xml
+zip unit.xml.zip unit.xml
+gzip -k --force unit.xml.tar
+gzip -k --force unit.xml.bz2
+bzip2 -k unit.xml.zip
+gzip -k unit.xml.zip
+ls unit.xml | cpio -o > unit.xml.cpio
+bzip2 -k unit.xml.cpio
+gzip -k unit.xml.cpio
+bzip2 -k unit.xml.tar
+bzip2 -k unit.xml.gz
+cp unit.xml.tar.gz unit.xml.tgz
+cp unit.xml.tar.bz2 unit.xml.tbz2
