@@ -5,6 +5,7 @@ archive-single_targets = $(addprefix archive-single.xml, $(EXT))
 archive-multi_targets = $(addprefix archive-multi.xml, $(EXT))
 targets = $(unit_targets) $(emptyunit_targets) $(archive-single_targets) $(archive-multi_targets) 
 
+.PHONY: all
 all : $(targets)
 
 emptyunit.xml :
